@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/words/words",
+    "pages/read/read"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Pblog",
+    "navigationBarBackgroundColor": "#99CC99",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#6699CC"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/_index.png",
+        "selectedIconPath": "static/index.png"
+      },
+      {
+        "text": "留言",
+        "pagePath": "pages/words/words",
+        "iconPath": "static/_word.png",
+        "selectedIconPath": "static/word.png"
+      }
+    ],
+    "backgroundColor": "#99CC99",
+    "color": "#7f7f7f",
+    "selectedColor": "#A63E3E"
+  },
+  "usingComponents": {}
+}
