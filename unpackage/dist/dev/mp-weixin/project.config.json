@@ -28,7 +28,7 @@
       "list": [
         {
           "name": "文章阅读",
-          "query": "id=001",
+          "query": "id=607ab9f0e9b65a327f252f35",
           "id": 0,
           "pathName": "pages/read/read"
         }

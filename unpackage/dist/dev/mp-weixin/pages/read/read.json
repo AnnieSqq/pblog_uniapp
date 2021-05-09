@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "文章阅读",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "m-d-parser-highlight": "/components/cmder-MDParserHighlight/index"
+  }
 }

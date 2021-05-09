@@ -47,7 +47,7 @@
 		"list": [{
 			"name": "文章阅读",
 			"path": "pages/read/read",
-			"query": "id=001"
+			"query": "id=607ab9f0e9b65a327f252f35"
 		}]
 	}
 }

@@ -92,7 +92,7 @@ export default {
 		getArticleList() {
 			const that = this
 			uni.request({
-				url: 'http://localhost:3000/mini/browse/articles',
+				url: 'http://api.pblog.anniesqq.com/mini/browse/articles',
 				method: 'GET',
 				data: {
 					page: that.articleListInfo.page + 1,
@@ -125,7 +125,9 @@ export default {
 		},
 		// 文章点击
 		handleArticleClick(id) {
-			console.log(id)
+			uni.navigateTo({
+				url: '/pages/read/read?id='+id
+			})
 		}
 	},
 	onReachBottom() {

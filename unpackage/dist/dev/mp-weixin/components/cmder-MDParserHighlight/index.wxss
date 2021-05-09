@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**
+ * nnfx - a theme inspired by Netscape Navigator/Firefox
+ *
+ * @version 1.0.0
+ * @author (c) 2020 Jim Mason <jmason@ibinx.com>
+ * @license https://creativecommons.org/licenses/by-sa/4.0  CC BY-SA 4.0
+ */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fff;
+  color: #000;
+}
+.xml .hljs-meta {
+  font-weight: bold;
+  font-style: italic;
+  color: #48b;
+}
+.hljs-comment,
+.hljs-quote {
+  font-style: italic;
+  color: #070;
+}
+.hljs-name,
+.hljs-keyword {
+  color: #808;
+}
+.hljs-name,
+.hljs-attr {
+  font-weight: bold;
+}
+.hljs-string {
+  font-weight: normal;
+}
+.hljs-variable,
+.hljs-template-variable {
+  color: #477;
+}
+.hljs-code,
+.hljs-string,
+.hljs-meta-string,
+.hljs-number,
+.hljs-regexp,
+.hljs-link {
+  color: #00f;
+}
+.hljs-title,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #f40;
+}
+.hljs-section,
+.hljs-meta {
+  color: #642;
+}
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #639;
+}
+.hljs-function .hljs-title,
+.hljs-attr,
+.hljs-subst {
+  color: #000;
+}
+.hljs-formula {
+  background-color: #eee;
+  font-style: italic;
+}
+.hljs-addition {
+  background-color: #beb;
+}
+.hljs-deletion {
+  background-color: #fbb;
+}
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #964;
+}
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.parse {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  overflow-x: hidden!important;
+}
+.parse view {
+  word-break: hyphenate;
+}
+.parse .inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.parse ._div {
+  margin: 0;
+  padding: 0;
+}
+.parse ._h1 {
+  color: #666;
+  font-size: 2em;
+  margin: 0.67em;
+  text-align: left;
+}
+.parse ._h2 {
+  font-size: 1.5em;
+  margin: 0.83em;
+}
+.parse ._h3 {
+  font-size: 1.17em;
+  margin: 1em;
+}
+.parse ._h4  {
+  margin: 1.33em;
+}
+.parse ._h5  {
+  font-size: 0.83em;
+  margin: 1.67em;
+}
+.parse ._h6  {
+  font-size: 0.67em;
+  margin: 2.33em;
+}
+.parse ._h1,
+.parse ._h2,
+.parse ._h3,
+.parse ._h4,
+.parse ._h5,
+.parse ._h6,
+.parse ._b,
+.parse ._strong {
+  font-weight: bolder;
+}
+.parse ._p {
+  margin: 1em;
+}
+.parse ._i,
+.parse ._cite,
+.parse ._em,
+.parse ._var,
+.parse ._address {
+  font-style: italic;
+}
+.parse ._pre,
+.parse tt,
+.parse ._code,
+.parse ._kbd,
+.parse ._samp {
+  font-family: monospace;
+}
+.parse ._pre {
+  overflow: auto;
+  background: #f5f5f5;
+  padding: 16rpx;
+  white-space: pre;
+  margin: 1em;
+}
+.parse ._code {
+  display: inline;
+  background: #f5f5f5;
+}
+.parse big {
+  font-size: 1.17em;
+}
+.parse ._small,
+.parse ._sub,
+.parse ._sup {
+  font-size: 0.83em;
+}
+.parse ._sub {
+  vertical-align: sub;
+}
+.parse ._sup {
+  vertical-align: super;
+}
+.parse ._s,
+.parse strike,
+.parse ._del {
+  text-decoration: line-through;
+}
+.parse ._strong,
+.parse ._s {
+  display: inline;
+}
+.parse ._a {
+  color: deepskyblue;
+}
+.parse video {
+  text-align: center;
+  margin: 22rpx 0;
+}
+.parse .video-video {
+  width: 100%;
+}
+.parse ._img {
+  /* display: inline-block;
+ */
+  /* width: 0;
+ */
+  /* height: 0;
+ */
+  /* max-width: 100%;
+ */
+  /* overflow: hidden;
+ */
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+}
+.parse ._blockquote {
+  margin: 10rpx 0;
+  padding: 22rpx 0 22rpx 22rpx;
+  font-family: Courier, Calibri, "宋体";
+  background: #f5f5f5;
+  border-left: 6rpx solid #dbdbdb;
+}
+.parse ._blockquote ._p {
+  margin: 0;
+}
+.parse ._ul, .parse ._ol {
+  display: block;
+  margin: 1em 0;
+  padding-left: 33rpx;
+}
+.parse ._ol {
+  list-style-type: disc;
+}
+.parse ._ol {
+  list-style-type: decimal;
+}
+.parse ._ol>weixin-parse-template,.parse ._ul>weixin-parse-template {
+  display: list-item;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+  text-align: match-parent;
+}
+.parse ._ol>._li,.parse ._ul>._li {
+  display: list-item;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+  text-align: match-parent;
+}
+.parse ._ul ._ul, .parse ._ol ._ul {
+  list-style-type: circle;
+}
+.parse ._ol ._ol ._ul, .parse ._ol ._ul ._ul, .parse ._ul ._ol ._ul, .parse ._ul ._ul ._ul {
+	list-style-type: square;
+}
+.parse ._u {
+  text-decoration: underline;
+}
+.parse .hide {
+  display: none;
+}
+.parse ._del {
+  display: inline;
+}
+.parse ._figure {
+  overflow: hidden;
+}
+.parse ._table {
+  width: 100%;
+}
+.parse ._thead, .parse ._tfoot, .parse ._tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.parse ._tr {
+  width:100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-right: 2rpx solid #e0e0e0;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+.parse ._th,
+.parse ._td {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 1276rpx;
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 11rpx;
+  border-left: 2rpx solid #e0e0e0;
+}
+.parse ._td:last {
+  border-top: 2rpx solid #e0e0e0;
+}
+.parse ._th {
+  background: #f0f0f0;
+  border-top: 2rpx solid #e0e0e0;
+}
+.loading{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.loading_wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	        align-content: center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	        flex-direction:column;
+}
+.loading_wrap .image{
+	width: 100px;
+	height: 100px;
+}
+.loading_wrap text{
+	font-size: 16px;
+	text-align: center;
+}
+

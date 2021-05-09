@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "parser": "/components/cmder-MDParserHighlight/parser/parser"
+  }
+}
