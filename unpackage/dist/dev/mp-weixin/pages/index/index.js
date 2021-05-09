@@ -103,10 +103,10 @@ var components
 try {
   components = {
     uniIcons: function() {
-      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 33))
+      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 35))
     },
     articleCard: function() {
-      return __webpack_require__.e(/*! import() | components/article-card/article-card */ "components/article-card/article-card").then(__webpack_require__.bind(null, /*! @/components/article-card/article-card.vue */ 41))
+      return __webpack_require__.e(/*! import() | components/article-card/article-card */ "components/article-card/article-card").then(__webpack_require__.bind(null, /*! @/components/article-card/article-card.vue */ 43))
     }
   }
 } catch (e) {
@@ -170,7 +170,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var articleCard = function articleCard() {__webpack_require__.e(/*! require.ensure | components/article-card/article-card */ "components/article-card/article-card").then((function () {return resolve(__webpack_require__(/*! ../../components/article-card/article-card.vue */ 41));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var articleCard = function articleCard() {__webpack_require__.e(/*! require.ensure | components/article-card/article-card */ "components/article-card/article-card").then((function () {return resolve(__webpack_require__(/*! ../../components/article-card/article-card.vue */ 43));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -302,10 +302,13 @@ __webpack_require__.r(__webpack_exports__);
 
     } },
 
-  onReachBottom: function onReachBottom() {
+  onReachBottom: function onReachBottom() {var _this = this;
     // 如果页数小于总页数就继续加载
     if (this.articleListInfo.page < this.articleListInfo.pages) {
-      this.getArticleList();
+      // 由于加载过快，设置定时器来使加载过程更明显
+      setTimeout(function () {
+        _this.getArticleList();
+      }, 1000);
     }
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

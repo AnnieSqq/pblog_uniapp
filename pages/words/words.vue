@@ -60,17 +60,17 @@ export default {
 			iswordInputFocus: false,
 			wordList: [],
 			wordListInfo: {
-				page:0,
-				pages:1
+				page: 0,
+				pages: 1
 			}
 		}
 	},
 	methods: {
 		// 发送留言
 		handlewordSend() {
-			if(this.wordInput===''){
+			if (this.wordInput === '') {
 				return uni.showToast({
-					title:'不能发空的留言哦'
+					title: '不能发空的留言哦'
 				})
 			}
 			this.wordInput = ''
@@ -88,9 +88,7 @@ export default {
 					action: 'leaveword'
 				},
 				success(res) {
-					that.wordList = that.wordList.concat(
-						res.data.data.comments
-					)
+					that.wordList = that.wordList.concat(res.data.data.comments)
 					that.wordListInfo = {
 						page: res.data.data.page,
 						size: res.data.data.size,
@@ -99,14 +97,17 @@ export default {
 					}
 				}
 			})
-		},
+		}
 	},
 	onLoad() {
 		this.getwordList()
 	},
 	onReachBottom() {
-		if(this.wordListInfo.page<this.wordListInfo.pages){
-			this.getwordList()
+		if (this.wordListInfo.page < this.wordListInfo.pages) {
+			// 由于加载过快，设置定时器来使加载过程更明显
+			setTimeout(() => {
+				this.getwordList()
+			}, 1000)
 		}
 	}
 }
@@ -169,7 +170,7 @@ export default {
 	> uni-icons {
 		margin: 0 10rpx;
 	}
-	> input{
+	> input {
 		width: 550rpx;
 	}
 }

@@ -126,14 +126,17 @@ export default {
 		// 文章点击
 		handleArticleClick(id) {
 			uni.navigateTo({
-				url: '/pages/read/read?id='+id
+				url: '/pages/read/read?id=' + id
 			})
 		}
 	},
 	onReachBottom() {
 		// 如果页数小于总页数就继续加载
 		if (this.articleListInfo.page < this.articleListInfo.pages) {
-			this.getArticleList()
+			// 由于加载过快，设置定时器来使加载过程更明显
+			setTimeout(() => {
+				this.getArticleList()
+			}, 1000)
 		}
 	}
 }

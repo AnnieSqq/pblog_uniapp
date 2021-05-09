@@ -178,7 +178,10 @@ export default {
 	},
 	onReachBottom() {
 		if(this.commentListInfo.page<this.commentListInfo.pages){
+			// 由于加载过快，设置定时器来使加载过程更明显
+			setTimeout(() => {
 			this.getCommentList()
+			}, 1000)
 		}
 	}
 }
